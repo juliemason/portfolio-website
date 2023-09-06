@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-   
+
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <link rel="shortcut icon" href="img/devicon_png copy.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Julie Mason | Contact</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/style.production.css">
+   <link rel="shortcut icon" href="img/devicon_pngcopy.png" type="image/x-icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Julie Mason | Contact</title>
 </head>
 
 <body>
-    <!-- Header including the logo and the main navigation -->
-    <header class="page-header">
-       <!-- Add Logo here -->
-       <img src="img/Logo.png" alt="logo" class="page-header__item">
-       <nav class="main-navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
-             <li role="presentation">
-                <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-             </li>
-             <li role="presentation">
-                <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-             </li>
-             <li role="presentation">
-                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-             </li>
-             <li role="presentation">
-                <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
-             </li>
-          </ul>
-       </nav>
-    </header>
-     <main>   
-        <h1>Contact</h1>
-        <p>Julie Mason</p>
-            Tel: <a href="tel:+1 906 630 0178">Tel: +1 906 630 0178</a><br>
-            Skype: <a href="#"> Julie Mason Skype</a><br>
-            Email: <a href="mailto:juliemasonwork@gmail.com">juliemasonwork@gmail.com</a>
-            <div><a href="mailto:office@careerfoundry.com">Contact me</a></div>
-        <form action="" method="post" id="contact-form">
-             <label class="standard-label" for="contact-email">E-mail: </label>
-            <input id="contact-email" required>
+   <!-- Header including the logo and the main navigation -->
+   <header class="page-header">
+      <!-- Add Logo here -->
+      <img src="img/Logo.png" alt="logo" class="page-header__item">
+      <nav class="main-navigation page-header__item">
+         <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+               <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+            </li>
+            <li role="presentation">
+               <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+            </li>
+            <li role="presentation">
+               <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+            </li>
+            <li role="presentation">
+               <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
 
-            <label class="standard-label" for="contact-telephone">Telephone: </label>
-             <input id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-            <label class="standard-label" for="contact-message">Message: </label>
-            <textarea maxlength="240" id="contact-message" required></textarea>
+   <main>
+      <h1>Contact</h1>
+      <p>Julie Mason</p>
+      Tel: <a href="tel:+19066300178">Tel: +1 906 630 0178</a><br>
+      Skype: <a href="#"> Julie Mason Skype</a><br>
+      Email: <a href="mailto:juliemasonwork@gmail.com">juliemasonwork@gmail.com</a>
+      <div><a href="mailto:office@careerfoundry.com">Contact me</a></div>
+      <form action="post" class="contact__form--container">
+         <label class="standard-label" for="contact-email">E-mail: </label>
+         <input id="contact-email" required>
+   
+         <label class="standard-label" for="contact-telephone">Telephone: </label>
+         <input id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
     
-            <input type="submit" value="Send message">
-        </form>
-    </main>
+         <label class="standard-label" for="contact-message">Message: </label>
+         <textarea maxlength="240" id="contact-message" required></textarea>
+   
+         <input type="submit" value="Send message">
+      </form>
 
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <img src="img/github.svg" alt="Github Icon">
-            <img src="img/twitter.svg" alt="Twitter Icon">
-            <img src="img/linkedin.svg" alt="LinkedIn Icon">
-        </div>
-    </footer>
+   </main>
+
+   <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+         <img src="img/github.svg" alt="Github Icon">
+         <img src="img/twitter.svg" alt="Twitter Icon">
+         <img src="img/linkedin.svg" alt="LinkedIn Icon">
+      </div>
+   </footer>
 </body>
-</html>
 
+</html>
