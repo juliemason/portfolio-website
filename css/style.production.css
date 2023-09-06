@@ -1,0 +1,335 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+/*
+Colors used:
+
+Text color (Darkest Blue): #00171F
+Primary color (Navy Blue): #003459
+Secondary color (Teal): #007EA7
+Active link color (Bright Blue): #00A8E8
+Background color (White): #ffffff
+*/
+
+
+
+/*body styling*/
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/*Grid*/
+.grid {
+    display: -ms-grid;
+    display: grid;
+  }
+.grid__item {
+    background-color: rgb(211, 211, 211);
+  }
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+
+/*link button styling*/
+a {
+    color:rgb(0, 52, 89)
+}
+
+a:visited {
+    color:rgb(0, 52, 89)
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+a:active {
+    color:rgb(0, 52, 89)
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    background-color: rgb(0, 52, 89);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button__secondary {
+    background-color: rgb(0, 168, 232);
+    color: rgb(255, 255, 255);
+}
+
+.button__secondary:hover, .button__secondary:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: rgb(0, 52, 89);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: rgb(0, 52, 89);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+
+/*profile styling*/
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+  }
+
+  .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+  }
+
+  .page-main {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    text-align: center;
+  }
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation-list {
+    list-style-type: none;
+  }
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*responsive grid*/
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/*Animation*/
+.sun {
+    -webkit-animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
+  }
+  @-webkit-keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+
+.cloud-front {
+    -webkit-animation: 30s cloud-move infinite alternate linear;
+            animation: 30s cloud-move infinite alternate linear;
+  }
+  @-webkit-keyframes cloud-move {
+    from {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    to {
+      -webkit-transform: translate(200px, 50px);
+              transform: translate(200px, 50px);
+    }
+  }
+  @keyframes cloud-move {
+    from {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    to {
+      -webkit-transform: translate(200px, 50px);
+              transform: translate(200px, 50px);
+    }
+  }
+
+.cloud-back {
+    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+            animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+  @-webkit-keyframes cloud-move-reverse {
+    from {
+      -webkit-transform: translate(446px, 48px);
+              transform: translate(446px, 48px);
+    }
+    to {
+      -webkit-transform: translate(100px, 48px);
+              transform: translate(100px, 48px);
+    }
+  }
+  @keyframes cloud-move-reverse {
+    from {
+      -webkit-transform: translate(446px, 48px);
+              transform: translate(446px, 48px);
+    }
+    to {
+      -webkit-transform: translate(100px, 48px);
+              transform: translate(100px, 48px);
+    }
+  }
