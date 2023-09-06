@@ -202,7 +202,26 @@ ul {
   list-style-type: none;
 }
 
-/*responsive grid*/
+/*responsive grid*/ 
+
+/*Small Smartphones*/ 
+@media all and (max-width:480px) {
+  /*Fonts*/
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+    }
+  h3 {  
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
